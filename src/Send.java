@@ -34,6 +34,10 @@ public class Send {
 			String aMessage = Double.toString(aPrice);
 			String mMessage = Double.toString(mPrice);
 
+			System.out.println("send apple price -> " + aMessage);
+			System.out.println("send microsoft price -> " + mMessage);
+			System.out.println();
+
 			channel.basicPublish("", "apple", null, aMessage.getBytes("UTF-8"));
 			channel.basicPublish("", "microsoft", null, mMessage.getBytes("UTF-8"));
 
