@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Wich",
+            "request": "launch",
+            "mainClass": "Wich",
+            "projectName": "messageQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WichBuy",
+            "request": "launch",
+            "mainClass": "WichBuy",
+            "projectName": "messageQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TesteGraficos",
+            "request": "launch",
+            "mainClass": "TesteGraficos",
+            "projectName": "messageQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DesenhandoGraficos",
+            "request": "launch",
+            "mainClass": "DesenhandoGraficos",
+            "projectName": "messageQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Send",
+            "request": "launch",
+            "mainClass": "Send",
+            "projectName": "messageQueue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Receive",
+            "request": "launch",
+            "mainClass": "Receive",
+            "projectName": "messageQueue"
+        }
+    ]
+}
