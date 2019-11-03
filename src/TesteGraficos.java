@@ -4,23 +4,26 @@ import javax.swing.JFrame;
 
 public class TesteGraficos {
 
+    // Reference:
+    // http://ateoriadadesevolucao.blogspot.com/2012/05/desenhando-graficos-simples-com-java-2d.html
+
     public static void main(String[] args) {
         // cria painel para desenhar grafico
         final DesenhandoGraficos desenhando = new DesenhandoGraficos();
 
         desenhando.setTitulos("Amostras por Periodo", "Mes", "Quantidade de Amostras");
-        desenhando.setParametros(30, "Jan.");
-        desenhando.setParametros(60, "Fev.");
-        desenhando.setParametros(25, "Mar.");
-        desenhando.setParametros(45, "Abr.");
-        desenhando.setParametros(115, "Mai.");
-        desenhando.setParametros(73, "Jun.");
-        desenhando.setParametros(87, "Jul.");
-        desenhando.setParametros(55, "Ago.");
-        desenhando.setParametros(19, "Set.");
-        desenhando.setParametros(90, "Out.");
-        desenhando.setParametros(45, "Nov.");
-        desenhando.setParametros(102, "Dez.");
+        // desenhando.setParametros(30, "Jan.");
+        // desenhando.setParametros(60, "Fev.");
+        // desenhando.setParametros(25, "Mar.");
+        // desenhando.setParametros(45, "Abr.");
+        // desenhando.setParametros(115, "Mai.");
+        // desenhando.setParametros(73, "Jun.");
+        // desenhando.setParametros(87, "Jul.");
+        // desenhando.setParametros(55, "Ago.");
+        // desenhando.setParametros(19, "Set.");
+        // desenhando.setParametros(90, "Out.");
+        // desenhando.setParametros(45, "Nov.");
+        // desenhando.setParametros(102, "Dez.");
 
         // cria comboBox
         final JComboBox<Object> jComboBoxGrafico = new JComboBox();
