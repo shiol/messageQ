@@ -1,7 +1,3 @@
-/*
- * DesenhandoGraficos.java
- */
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -10,12 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Andreia
- */
 public class DesenhandoGraficos extends JPanel {
 
+    private static final long serialVersionUID = 1L;
     private int altura = 200; // altura do grafico
     private int espaco = 30; // espaco entre valores
     private int margem = 30;

@@ -1,7 +1,3 @@
-/*
- * TesteGraficos.java
- */
-
 import java.awt.BorderLayout;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -27,7 +23,7 @@ public class TesteGraficos {
         desenhando.setParametros(102, "Dez.");
 
         // cria comboBox
-        final JComboBox jComboBoxGrafico = new JComboBox();
+        final JComboBox<Object> jComboBoxGrafico = new JComboBox();
         jComboBoxGrafico.setModel(
                 new javax.swing.DefaultComboBoxModel(new String[] { "Grafico em Colunas", "Grafico em Linha" }));
         jComboBoxGrafico.addActionListener(new java.awt.event.ActionListener() {
