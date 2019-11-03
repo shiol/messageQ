@@ -47,7 +47,8 @@ public class Receive {
 		if (list.size() >= 10) {
 			System.out.println(name);
 			list.forEach((x) -> {
-				System.out.print(x + " | ");
+				System.out.printf("%.4f", x);
+				System.out.print(" | ");
 			});
 			System.out.println();
 			System.out.println();
