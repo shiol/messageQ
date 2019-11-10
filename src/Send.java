@@ -1,4 +1,5 @@
 import java.util.Random;
+
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -10,6 +11,9 @@ public class Send {
 		factory.setHost("localhost");
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
+
+		channel.queueDeclare("apple", false, false, false, null);
+		channel.queueDeclare("microsoft", false, false, false, null);
 
 		Random random = new Random(new Random().nextInt());
 		Double aPrice = 1.0;

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -16,6 +17,9 @@ public class Receive {
 		factory.setHost("localhost");
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
+
+		channel.queueDeclare("apple", false, false, false, null);
+		channel.queueDeclare("microsoft", false, false, false, null);
 
 		DeliverCallback deliverCallback = (consumerTag, delivery) -> {
 			String queue = delivery.getEnvelope().getRoutingKey();
