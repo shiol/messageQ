@@ -21,9 +21,9 @@ ax = fig.add_subplot(1, 1, 1)
 
 def animate(i):
     ax.clear()
-    if(len(list1) == 10 & len(list2) == 10):
-        ax.plot(x, list1)
-        ax.plot(x, list2)
+    if(len(list1) >= 10 & len(list2) >= 10):
+        ax.plot(list1)
+        ax.plot(list2)
         print(list1)
         print(list2)
         list1.clear()
@@ -39,9 +39,9 @@ def callback(ch, method, properties, body):
         aux = float(body)
         list2.append(aux)
         print('ms = %f' % aux)
-    if(len(list1) == 10 & len(list2) == 10):
-        plt.plot(x, list1)
-        plt.plot(x, list2)
+    if(len(list1) >= 10 & len(list2) >= 10):
+        plt.plot(list1)
+        plt.plot(list2)
         plt.draw()
         plt.show()
         print(list1)

@@ -16,8 +16,8 @@ def animate(i):
     list1[:] = [x + 1 for x in list1]
     list2[:] = [x + 1 for x in list2]
     ax.clear()
-    ax.plot(x, list1)
-    ax.plot(x, list2)
+    ax.plot(list1)
+    ax.plot(list2)
 
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
