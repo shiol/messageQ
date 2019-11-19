@@ -15,7 +15,7 @@ public class Send {
 		channel.queueDeclare("apple", false, false, false, null);
 		channel.queueDeclare("microsoft", false, false, false, null);
 
-		Random random = new Random(new Random().nextInt());
+		Random random = new Random(System.currentTimeMillis());
 		Double aPrice = 1.0;
 		Double mPrice = 1.0;
 
