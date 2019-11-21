@@ -29,12 +29,8 @@ def animate(i):
         if len(eachLine) > 1:
             list2.append(float(eachLine))
     ax.clear()
-    if len(list1) > 10:
-        ax.plot(list1)
-        list1.clear()
-    if len(list2) > 10:
-        ax.plot(list2)
-        list2.clear()
+    ax.plot(list1)
+    ax.plot(list2)
 
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
