@@ -1,0 +1,1 @@
+javac -cp amqp-client-5.7.1.jar .\src\Send.java -d .\bin
