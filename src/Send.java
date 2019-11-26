@@ -23,12 +23,12 @@ public class Send {
 
 		while (true) {
 			if (random.nextBoolean()) {
-				aPrice = (Math.random() * ((max - min) + 1)) + min;
-			
+				aPrice = (random.nextDouble() * ((max - min) + 1)) + min;
+
 			}
 			if (random.nextBoolean()) {
-				mPrice = (Math.random() * ((max - min) + 1)) + min;
-			
+				mPrice = (random.nextDouble() * ((max - min) + 1)) + min;
+
 			}
 
 			String aMessage = Double.toString(aPrice);
