@@ -18,21 +18,17 @@ public class Send {
 		Random random = new Random(System.currentTimeMillis());
 		Double aPrice = 1.0;
 		Double mPrice = 1.0;
+		Double min = 0.0;
+		Double max = 20.0;
 
 		while (true) {
-			if (random.nextBoolean())
-				aPrice += random.nextDouble();
-			else {
-				aPrice -= random.nextDouble();
-				if (aPrice <= 0)
-					aPrice = 0.01;
+			if (random.nextBoolean()) {
+				aPrice = (random.nextDouble() * ((max - min) + 1)) + min;
+
 			}
-			if (random.nextBoolean())
-				mPrice += random.nextDouble();
-			else {
-				mPrice -= random.nextDouble();
-				if (mPrice <= 0)
-					mPrice = 0.01;
+			if (random.nextBoolean()) {
+				mPrice = (random.nextDouble() * ((max - min) + 1)) + min;
+
 			}
 
 			String aMessage = Double.toString(aPrice);
